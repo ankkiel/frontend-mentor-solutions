@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    --color-primary: hsl(47, 88%, 63%);
+    --color-neutral--light: hsl(0, 0%, 100%);
+    --color-neutral-grey: hsl(0, 0%, 50%);
+    --color-neutral-dark: hsl(0, 0%, 7%);
+
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    --font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: var(--desktop-width);
+    margin: 0 auto;
+
+    font-family: Figtree, sans-serif;
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--color-neutral-dark);
+
+    background-color: var(--color-primary);
+
+    line-height: 1.5;
+}
+
+.card {
+    margin: 0 auto;
+
+    max-width: 385px;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 23px;
+}
+
+.card__wrapper {
+    background-color: var(--color-neutral--light);
+    border: 1px solid var(--color-neutral-dark);
+    border-radius: 19px;
+
+    box-shadow: 8px 10px var(--color-neutral-dark);
+    
+    transition: box-shadow .6s ease-in-out;
+}
+
+.card__wrapper:hover {
+    box-shadow: 15px 15px var(--color-neutral-dark);
+}
+
+.card__image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card__tag {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    background-color: var(--color-primary);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: 'Figtree', sans-serif;
+
+    transition: color .6s ease-out;
+}
+
+.card__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card__date {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.card__title:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.card__description {
+    color: var(--color-neutral-grey);
+    font-weight: 600;
+}
+
+.card__author {
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.card__author-photo {
+    width: 32px;
+    height: 32px;
+}
