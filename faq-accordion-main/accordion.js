@@ -15,4 +15,5 @@ export function setupAccordion() {
       }
     })
   })
+  btns[0].click();
 }
