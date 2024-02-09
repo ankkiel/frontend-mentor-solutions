@@ -7,8 +7,8 @@ $color-white: #ffffff;
 $color-light-pink: #f9f0ff;
 $color-grayish-purple: #8c6991;
 $color-dark-purple: #2f1533;
+$color-hover-btn: #a820e4;
 
-$desktop-width: 1440px;
 $tablet-width: 600px;
 
 @mixin media-tablet {
@@ -34,8 +34,6 @@ body {
 }
 
 .main {
-  margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +46,6 @@ body {
 }
 
 .faqs {
-  box-sizing: border-box;
   max-width: 600px;
   border-radius: 18px;
   background-color: $color-white;
@@ -129,8 +126,13 @@ body {
     right: 0;
     top: 30%;
   }
+
   &.active:after {
     content: url('/public/images/icon-minus.svg');
+  }
+
+  &:hover {
+    color: $color-hover-btn
   }
 
   @include media-tablet() {

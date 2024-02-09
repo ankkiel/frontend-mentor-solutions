@@ -1,10 +1,10 @@
 export function setupAccordion() {
-  let btns = document.querySelectorAll('.faqs__btn');
+  const accordionButtons = document.querySelectorAll('.faqs__btn');
 
-  btns.forEach((item) => {
-    item.addEventListener('click', () => {
-      item.classList.toggle("active");
-      let descriptionText = item.parentElement.querySelector('.faqs__description');
+  accordionButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      button.classList.toggle("active");
+      let descriptionText = button.parentElement.querySelector('.faqs__description');
 
       if (descriptionText.style.maxHeight) {
         descriptionText.style.maxHeight = null;
@@ -15,5 +15,5 @@ export function setupAccordion() {
       }
     })
   })
-  btns[0].click();
+  accordionButtons[0].click();
 }
