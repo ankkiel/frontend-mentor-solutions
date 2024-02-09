@@ -6,9 +6,6 @@
     --color-neutral-grey: hsl(0, 0%, 50%);
     --color-neutral-dark: hsl(0, 0%, 7%);
 
-    --mobile-width: 375px;
-    --desktop-width: 1440px;
-
     --font-size: 16px;
 }
 
@@ -17,9 +14,7 @@
 }
 
 body {
-    max-width: var(--desktop-width);
-    margin: 0 auto;
-
+    margin: 0;
     font-family: Figtree, sans-serif;
     font-size: var(--font-size);
     font-weight: 600;
@@ -30,46 +25,45 @@ body {
     line-height: 1.5;
 }
 
-.card {
-    margin: 0 auto;
-
-    max-width: 385px;
-    min-height: 100vh;
-
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    height: 100vh;
 }
 
-.wrapper {
-    margin: 0 auto;
-    padding: 23px;
+.card {
+    max-width: 384px;
 }
 
 .card__wrapper {
+    padding: 23px;
+
     background-color: var(--color-neutral--light);
     border: 1px solid var(--color-neutral-dark);
-    border-radius: 19px;
+    border-radius: 20px;
 
-    box-shadow: 8px 10px var(--color-neutral-dark);
+    box-shadow: 8px 8px var(--color-neutral-dark);
     
     transition: box-shadow .6s ease-in-out;
 }
 
 .card__wrapper:hover {
-    box-shadow: 15px 15px var(--color-neutral-dark);
+    box-shadow: 12px 12px var(--color-neutral-dark);
 }
 
 .card__image {
     max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 11px;
+    margin-bottom: 19px;
 }
 
 .card__tag {
-    padding: 7px 15px;
+    padding: 6px 12px;
     border-radius: 5px;
-    font-size: 0.8rem;
+
+    font-size: 0.9rem;
     font-weight: 800;
     background-color: var(--color-primary);
 }
@@ -77,7 +71,6 @@ body {
 .card__title {
     margin: 0;
     font-size: 1.5em;
-    font-family: 'Figtree', sans-serif;
 
     transition: color .6s ease-out;
 }
@@ -88,8 +81,8 @@ body {
 }
 
 .card__date {
-    font-weight: 600;
     font-size: 0.9rem;
+    margin-bottom: 11px;
 }
 
 .card__title:hover {
@@ -98,8 +91,8 @@ body {
 }
 
 .card__description {
+    margin: 13px 0 24px 0;
     color: var(--color-neutral-grey);
-    font-weight: 600;
 }
 
 .card__author {
@@ -116,4 +109,36 @@ body {
 .card__author-photo {
     width: 32px;
     height: 32px;
+}
+
+@media (max-width: 425px) {
+    .card {
+        padding: 0 26px;
+    }
+
+    .card__wrapper {
+        max-width: 328px;
+        padding: 23px;
+    }
+
+    .card__image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card__tag {
+        font-size: 0.8rem;
+    }
+
+    .card__date {
+        font-size: 0.75rem;
+    }
+
+    .card__title {
+        font-size: 1.25rem;
+    }
+
+    .card__description {
+        font-size: 0.88rem;
+    }
 }

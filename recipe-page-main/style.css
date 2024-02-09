@@ -190,12 +190,18 @@ body {
     border-collapse: collapse;
 }
 
-.nutrition-table__row {
+.nutrition-table__row:not(:last-child) {
     border-bottom: 1px solid var(--color-neutral-grey);
 }
 
 
 .nutrition-table__cell {
+    padding: 14px;
+}
+
+.nutrition-table__heading {
+    text-align: left;
+    font-weight: inherit;
     padding: 14px;
 }
 
