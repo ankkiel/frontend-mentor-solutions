@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1 class="visually-hidden">Form feedback</h1>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__star">
+            <svg class="feedback__star-icon" width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+          </div>
+          <h2 class="feedback__title">How did we do?</h2>
+          <p class="feedback__description">Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+          <form class="feedback__form">
+            <fieldset class="feedback__rating rating">
+              <input class="rating__value" type="radio" id="star1" name="rating" value="1"><label class="rating__grade" for="star1">1</label>
+              <input class="rating__value" type="radio" id="star2" name="rating" value="2"><label class="rating__grade" for="star2">2</label>
+              <input class="rating__value" type="radio" id="star3" name="rating" value="3"><label class="rating__grade" for="star3">3</label>
+              <input class="rating__value" type="radio" id="star4" name="rating" value="4"><label class="rating__grade" for="star4">4</label>
+              <input class="rating__value" type="radio" id="star5" name="rating" value="5"><label class="rating__grade" for="star5">5</label>
+            </fieldset>
+            <button type="submit" class="feedback__submit">Submit</button>
+        </form>
+        </div>
+      </section>
+      <section class="thank-you">
+        <div class="thank-you__wrapper">
+          <div class="thank-you__image-wrapper">
+            <img src="./public/images/illustration-thank-you.svg" alt="illustration thank you" class="thank-you__image">
+          </div>
+          <p class="thank-you__rating">You selected <span class="thank-you__rating-selected">0</span> out of 5</p>
+          <h2 class="thank-you__title">Thank you!</h2>
+          <p class="thank-you__description"> We appreciate you taking the time to give a rating. If you ever need more support, 
+            don&rsquo;t hesitate to get in touch!</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
