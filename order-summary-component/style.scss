@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+$color-primary: hsl(225, 100%, 94%);
+$color-accent: hsl(245, 75%, 52%);
+$color-neutral-light: hsl(225, 100%, 98%);
+$color-neutral-lighter: hsl(0, 0%, 100%);
+$color-neutral-grey: hsl(224, 23%, 55%);
+$color-neutral-dark: hsl(223, 47%, 23%);
+
+$font-size: 16px;
+$font-primary: 'Red Hat Display', serif;
+$tablet-width: 767px;
+
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin hover-support {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size;
+}
+
+body {
+    margin: 0;
+
+    font-family: $font-primary;
+    background: url("./images/pattern-background-desktop.svg") no-repeat, $color-primary;
+    background-size: contain;
+
+    @include media-tablet {
+        background: url("./images/pattern-background-mobile.svg") no-repeat, $color-primary;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 1.5rem;
+
+    text-align: center;
+    border-radius: 1.25rem; 
+    background: $color-neutral-lighter url("./images/illustration-hero.svg") no-repeat top/contain;
+    box-shadow: 0px 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.15);
+
+    @include media-tablet {
+        max-width: 327px;
+    }
+
+    &__content {
+        padding: 265px 50px 50px;
+
+        @include media-tablet {
+            padding: 190px 30px 40px;
+        }
+    }
+
+    &__heading {
+        color: $color-neutral-dark;
+        margin: 0;
+        font-size: 1.75rem;
+        font-weight: 900;
+
+        @include media-tablet {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__description {
+        color: $color-neutral-grey;
+        line-height: 1.6;
+        font-weight: 600;
+
+        padding: 0 1.6rem;
+
+        margin-bottom: 1.3rem;
+
+        @include media-tablet {
+            margin-bottom: 1.6rem;
+            padding: 0;
+        }
+    }
+
+    &__plan-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        
+        padding: 1.5rem;
+    
+        background: $color-neutral-light;
+        border-radius: 1.5rem;
+        margin-bottom: 2rem;
+
+        @include media-tablet {
+            padding: 0.8rem;
+        }
+    }
+
+    &__plan-icon {
+        flex: 0 0 auto;
+        width: 48px;
+        height: 48px;
+    }
+
+
+    &__price-container {
+        flex: 1;
+        
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    &__plan-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex: 1;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__plan-name {
+        color: $color-neutral-dark;
+        margin: 0;
+        font-weight: 900;
+    }
+
+    &__plan-price {
+        color: $color-neutral-grey;
+        font-weight: 600;
+    }
+
+    &__button {
+        padding: 0;
+    
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 900;
+        font-size: 14px;
+    
+        font-family: inherit;
+    
+        cursor: pointer;
+    
+        transition: all 0.3s ease-in-out;
+    
+        &_primary {
+            width: 100%;
+            padding: 17px 0;
+        
+            background: $color-accent;
+            color: $color-neutral-light;
+            border-radius: 0.6rem;
+            box-shadow: 0px 1.25rem 1.25rem rgba(56, 42, 225, 0.2);
+            margin-bottom: 2rem;
+    
+            @include hover-support {
+                opacity: 0.75;
+            }
+
+            @include media-tablet {
+                margin-bottom: 1.3rem;
+            }
+        }
+    
+        &_change {
+            position: relative;
+    
+            color: $color-accent;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $color-accent;
+    
+                height: 1.5px;
+                width: 100%;
+    
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            @include hover-support {
+                opacity: 0.75;
+    
+                &::after {
+                    transform: scaleX(0);
+                }
+            }
+        }
+    
+        &_secondary {
+            color: $color-neutral-grey;
+    
+            @include hover-support {
+                color: $color-neutral-dark;
+            }
+        }
+    }
+}
