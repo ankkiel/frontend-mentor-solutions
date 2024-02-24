@@ -82,6 +82,7 @@ img {
     }
 
     &__heading {
+        color: $color-neutral-dark;
         margin: 0;
         font-size: 1.75rem;
         font-weight: 900;
@@ -94,11 +95,15 @@ img {
     &__description {
         color: $color-neutral-grey;
         line-height: 1.6;
+        font-weight: 600;
+
+        padding: 0 1.6rem;
 
         margin-bottom: 1.3rem;
 
         @include media-tablet {
             margin-bottom: 1.6rem;
+            padding: 0;
         }
     }
 
@@ -107,11 +112,11 @@ img {
         flex-wrap: wrap;
         gap: 18px;
         
-        padding: 1.6rem;
+        padding: 1.5rem;
     
         background: $color-neutral-light;
         border-radius: 1.5rem;
-        margin-bottom: 1.9rem;
+        margin-bottom: 2rem;
 
         @include media-tablet {
             padding: 0.8rem;
@@ -143,12 +148,14 @@ img {
     }
 
     &__plan-name {
+        color: $color-neutral-dark;
         margin: 0;
         font-weight: 900;
     }
 
     &__plan-price {
         color: $color-neutral-grey;
+        font-weight: 600;
     }
 
     &__button {

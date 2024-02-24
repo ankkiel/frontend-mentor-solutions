@@ -54,6 +54,7 @@ img {
   }
 }
 .order-summary__heading {
+  color: hsl(223, 47%, 23%);
   margin: 0;
   font-size: 1.75rem;
   font-weight: 900;
@@ -66,21 +67,24 @@ img {
 .order-summary__description {
   color: hsl(224, 23%, 55%);
   line-height: 1.6;
+  font-weight: 600;
+  padding: 0 1.6rem;
   margin-bottom: 1.3rem;
 }
 @media (max-width: 767px) {
   .order-summary__description {
     margin-bottom: 1.6rem;
+    padding: 0;
   }
 }
 .order-summary__plan-container {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  padding: 1.6rem;
+  padding: 1.5rem;
   background: hsl(225, 100%, 98%);
   border-radius: 1.5rem;
-  margin-bottom: 1.9rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
   .order-summary__plan-container {
@@ -106,11 +110,13 @@ img {
   gap: 15px;
 }
 .order-summary__plan-name {
+  color: hsl(223, 47%, 23%);
   margin: 0;
   font-weight: 900;
 }
 .order-summary__plan-price {
   color: hsl(224, 23%, 55%);
+  font-weight: 600;
 }
 .order-summary__button {
   padding: 0;
