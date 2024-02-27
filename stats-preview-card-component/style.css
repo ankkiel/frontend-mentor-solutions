@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  background: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 0 24px;
+}
+
+.card {
+  max-width: 1110px;
+  display: grid;
+  grid-template-areas: "info picture";
+  grid-template-columns: 51.3% 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: hsl(244, 38%, 16%);
+}
+.card__content {
+  padding: 70px 119px 64px 72px;
+  grid-area: info;
+}
+@media (max-width: 768px) {
+  .card__content {
+    padding: 40px 35px;
+    text-align: center;
+  }
+}
+.card__image-container {
+  background-color: hsl(277, 64%, 61%);
+  grid-area: picture;
+}
+.card__image {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+.card__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+}
+@media (max-width: 768px) {
+  .card__heading {
+    font-size: 1.82rem;
+    margin-bottom: 11px;
+  }
+}
+.card__heading-accent {
+  color: hsl(277, 64%, 61%);
+}
+.card__description {
+  margin: 0;
+  margin-bottom: 77px;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (max-width: 768px) {
+  .card__description {
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+}
+.card__stats-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .card__stats-list {
+    grid-template-columns: 100%;
+    gap: 29px;
+  }
+}
+.card__stats-text {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: inherit;
+  font-size: 0.9rem;
+}
+.card__stats-number {
+  text-transform: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .card {
+    max-width: 375px;
+    grid-template-areas: "picture" "info";
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
