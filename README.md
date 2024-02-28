@@ -18,4 +18,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 09 | [NFT preview card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/nft-preview-card-component-main) | HTML, SCSS, Flexbox, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/nft-preview-card-component-main/) |
 | 10 | [Order summary component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/order-summary-component) | HTML, SCSS, Flexbox, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/order-summary-component/) |
 | 11 | [Stats preview card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/stats-preview-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/stats-preview-card-component/) |
+| 12 | [3 column preview card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/3-column-preview-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/3-column-preview-card-component/) |
 </details>
