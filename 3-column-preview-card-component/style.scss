@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$color-sedans: hsl(31, 77%, 52%);
+$color-suvs: hsl(184, 100%, 22%);
+$color-luxury: hsl(179, 100%, 13%);
+
+$color-paragraph: hsla(0, 0%, 100%, 0.75);
+$color-neutral-light-gray: hsl(0, 0%, 95%);
+
+$base-font-size: 15px;
+$base-font-weight: 400;
+
+$primary-font: 'Lexend Deca', sans-serif;
+$secondary-font: 'Big Shoulders Display', cursive;
+
+$tablet-width: 768px;
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: $base-font-weight;
+    color: $color-paragraph;
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.cars {
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+    overflow: hidden;
+    border-radius: 10px;
+    
+    @include media-tablet() {
+        grid-template-columns: 1fr;
+    }
+}
+
+.car-card {
+    position: relative;
+   
+    &::before {
+        position: absolute;
+        top: 3.2rem;
+        left: 3.2rem;
+    }
+
+    &_sedans {
+        background: $color-sedans;
+
+        &::before{
+            content: url("images/icon-sedans.svg");
+        }
+    }
+
+    &_suvs {
+        background: $color-suvs;
+
+        &::before{
+            content: url("images/icon-suvs.svg");
+        }
+    }
+
+    &_luxury {
+        background: $color-luxury;
+
+        &::before{
+            content: url("images/icon-luxury.svg");
+        }
+    }
+
+    &__wrapper {
+        padding: 8.2rem 3.2rem 3.2rem;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 2rem;
+
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: $color-neutral-light-gray;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 5.6rem;
+        line-height: 1.6;
+        color: $color-paragraph;
+
+        @include media-tablet() {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+
+        padding: 0.9rem 2rem;
+        text-decoration: none;
+        border: 2px solid $color-neutral-light-gray;
+        border-radius: 30px;
+        background-color: $color-neutral-light-gray;
+
+        transition: all .5s ease-in-out;
+        
+
+        &_sedans {
+            color: $color-sedans;
+        }
+    
+        &_suvs {
+            color: $color-suvs;
+        }
+    
+        &_luxury {
+            color: $color-luxury;
+        }
+
+        &:hover {
+            color: $color-neutral-light-gray;
+            background-color: transparent;
+            border: 2px solid $color-neutral-light-gray;   
+        }
+    }
+}

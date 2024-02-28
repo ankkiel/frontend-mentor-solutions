@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.cars {
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .cars {
+    grid-template-columns: 1fr;
+  }
+}
+
+.car-card {
+  position: relative;
+}
+.car-card::before {
+  position: absolute;
+  top: 3.2rem;
+  left: 3.2rem;
+}
+.car-card_sedans {
+  background: hsl(31, 77%, 52%);
+}
+.car-card_sedans::before {
+  content: url("images/icon-sedans.svg");
+}
+.car-card_suvs {
+  background: hsl(184, 100%, 22%);
+}
+.car-card_suvs::before {
+  content: url("images/icon-suvs.svg");
+}
+.car-card_luxury {
+  background: hsl(179, 100%, 13%);
+}
+.car-card_luxury::before {
+  content: url("images/icon-luxury.svg");
+}
+.car-card__wrapper {
+  padding: 8.2rem 3.2rem 3.2rem;
+}
+.car-card__heading {
+  margin: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+.car-card__desc {
+  margin: 0;
+  margin-bottom: 5.6rem;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (max-width: 768px) {
+  .car-card__desc {
+    margin-bottom: 1.8rem;
+  }
+}
+.car-card__link {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.5s ease-in-out;
+}
+.car-card__link_sedans {
+  color: hsl(31, 77%, 52%);
+}
+.car-card__link_suvs {
+  color: hsl(184, 100%, 22%);
+}
+.car-card__link_luxury {
+  color: hsl(179, 100%, 13%);
+}
+.car-card__link:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}/*# sourceMappingURL=style.css.map */
