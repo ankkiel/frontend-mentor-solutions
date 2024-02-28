@@ -20,7 +20,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  padding: 0 24px;
+  padding: 87px 24px;
 }
 
 .card {
