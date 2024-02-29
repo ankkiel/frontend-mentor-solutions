@@ -13,13 +13,16 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
-}
-
-.main {
+  background-color: hsl(0, 0%, 95%);
+  padding: 1.5rem 1rem;
   display: grid;
   place-content: center;
   min-height: 100vh;
-  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 8.2rem 1rem;
+  }
 }
 
 .visually-hidden {
@@ -40,43 +43,31 @@ body {
   max-width: 920px;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  margin-top: 2.8rem;
   overflow: hidden;
   border-radius: 10px;
 }
 @media (max-width: 768px) {
   .cars {
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
 }
 
-.car-card {
-  position: relative;
-}
-.car-card::before {
-  position: absolute;
-  top: 3.2rem;
-  left: 3.2rem;
-}
 .car-card_sedans {
   background: hsl(31, 77%, 52%);
-}
-.car-card_sedans::before {
-  content: url("images/icon-sedans.svg");
 }
 .car-card_suvs {
   background: hsl(184, 100%, 22%);
 }
-.car-card_suvs::before {
-  content: url("images/icon-suvs.svg");
-}
 .car-card_luxury {
   background: hsl(179, 100%, 13%);
 }
-.car-card_luxury::before {
-  content: url("images/icon-luxury.svg");
-}
 .car-card__wrapper {
-  padding: 8.2rem 3.2rem 3.2rem;
+  padding: 3.2rem;
+}
+.car-card__icon {
+  margin-bottom: 2rem;
 }
 .car-card__heading {
   margin: 0;

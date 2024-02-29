@@ -35,14 +35,18 @@ body {
     font-family: $primary-font;
     font-weight: $base-font-weight;
     color: $color-paragraph;
-}
+    background-color: $color-neutral-light-gray;
 
-.main {
+    padding: 1.5rem 1rem;
+
     display: grid;
     place-content: center;
     
     min-height: 100vh;
-    padding: 0 1rem;
+
+    @include media-tablet() {
+        padding: 8.2rem 1rem;
+    }
 }
 
 .visually-hidden {
@@ -63,49 +67,36 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     
+    margin-top: 2.8rem;
+    
     overflow: hidden;
     border-radius: 10px;
     
     @include media-tablet() {
         grid-template-columns: 1fr;
+        margin-top: 0;
     }
 }
 
 .car-card {
-    position: relative;
-   
-    &::before {
-        position: absolute;
-        top: 3.2rem;
-        left: 3.2rem;
-    }
-
     &_sedans {
         background: $color-sedans;
-
-        &::before{
-            content: url("images/icon-sedans.svg");
-        }
     }
 
     &_suvs {
         background: $color-suvs;
-
-        &::before{
-            content: url("images/icon-suvs.svg");
-        }
     }
 
     &_luxury {
         background: $color-luxury;
-
-        &::before{
-            content: url("images/icon-luxury.svg");
-        }
     }
 
     &__wrapper {
-        padding: 8.2rem 3.2rem 3.2rem;
+        padding: 3.2rem;
+    }
+
+    &__icon {
+        margin-bottom: 2rem;
     }
 
     &__heading {
