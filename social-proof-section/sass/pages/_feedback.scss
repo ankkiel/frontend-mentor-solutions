@@ -1,0 +1,52 @@
+.feedback {
+    @include grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 270px;
+    grid-area: feedback;
+    gap: 2rem;
+    
+    &__item {
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $color-primary;
+        padding: 2.7rem 2.2rem;
+        border-radius: 0.5rem;
+        align-self: flex-start;
+
+        &:nth-of-type(2) {
+            align-self: center;
+        }
+
+        &:nth-of-type(3) {
+            align-self: flex-end;
+
+            @include media-large {
+                align-self: center;
+            }
+        }
+
+        @include media-large {
+            height: 100%;
+        }
+
+        @include media-mobile {
+            padding: 2.7rem 2.3rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+
+    @include media-large {
+        grid-template-rows: auto;
+    }
+
+    @include media-medium {
+        grid-template-columns: auto;
+    }
+
+    @include media-mobile {
+        gap: 1rem;
+    }
+}

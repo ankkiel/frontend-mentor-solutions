@@ -1,0 +1,20 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    &__star {
+        display: inline-block;
+
+        width: 17px;
+        height: 16px;
+        
+        &--active {
+            background-image: url(../images/icon-star.svg);
+        }
+    }
+
+    @include media-medium {
+        flex-basis: 100%;
+    }
+}
