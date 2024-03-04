@@ -1,0 +1,39 @@
+.intro {
+    max-width: 450px;
+
+    display: grid;
+    gap: 1.5rem;
+    grid-area: intro;
+    padding-right: 2rem;
+
+    &__heading {
+        margin: 0;
+        
+        font-size: 3.6rem;
+        letter-spacing: -0.07rem;
+        color: $color-primary;
+
+        @include media-mobile {
+            font-size: 2.6rem;
+            max-width: 326px;
+            line-height: 2.2rem;
+        }
+    }
+
+    &__desc {
+        margin: 0;
+
+        color: $color-neutral-dark;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: $font-weight-regular;
+    }
+
+    @include media-large {
+        max-width: 100%;
+    }
+
+    @include media-medium {
+        padding-right: 0;
+    }
+}

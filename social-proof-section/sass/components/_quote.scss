@@ -1,0 +1,37 @@
+
+.quote {
+    text-align: left;
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__author-img {
+        border-radius: 50%;
+        width: 42px;    
+    }
+
+    &__author-feature {
+        font-size: 1.1rem;
+        color: $color-primary-accent;
+        font-weight: 400;
+    }
+
+    &__author-name {
+        margin: 0;
+        margin-bottom: 0.4rem;
+        color: $color-neutral-white;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    &__text {
+        margin: 0;
+        margin-top: 1.7rem;
+        color: $color-neutral-white;
+        font-weight: $font-weight-regular;
+        line-height: 1.35;
+        font-size: 1.1rem;
+    }
+}

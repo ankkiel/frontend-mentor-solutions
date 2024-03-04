@@ -1,0 +1,37 @@
+.social-proof {
+    @include grid;
+    min-height: 100vh;
+
+    &__wrapper {
+        max-width: $breakpoint-large;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+        "intro indicators"
+        "feedback feedback";
+        
+        row-gap: 4.9rem;
+
+        @include media-large {
+            text-align: center;
+            grid-template-columns: 1fr;
+            
+            margin: 0 auto;
+        }
+
+        @include media-medium {
+            grid-template-areas:
+            "intro"
+            "indicators"
+            "feedback";
+        }
+
+        @include media-mobile {
+            row-gap: 2.7rem;
+        }
+        
+    }
+}
