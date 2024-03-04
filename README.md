@@ -20,4 +20,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 11 | [Stats preview card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/stats-preview-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/stats-preview-card-component/) |
 | 12 | [3 column preview card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/3-column-preview-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/3-column-preview-card-component/) |
 | 13 | [Profile card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/profile-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/profile-card-component/) |
+| 14 | [Social proof section](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/social-proof-section) | HTML, SCSS, Grid, Flexbox, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/social-proof-section/) |
 </details>
