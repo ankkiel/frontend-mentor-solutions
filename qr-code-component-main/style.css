@@ -1,72 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 :root {
-    --color-bg: hsl(212, 45%, 89%);
-    --color-light:hsl(0, 0%, 100%);
-    --color-title: hsl(218, 44%, 22%);
-    --color-text: hsl(220, 15%, 55%); 
+    --color-qr-code-bg: #ffffff;
+    --color-text-heading: #1f314f;
+    --color-text-paragraph: #7d889e;
+    --color-bg: #d5e1ef;
 
-    --font-size: 16px;
+    --base-font-size: 15px;
+    --base-font-family: 'Outfit', sans-serif;
+    --regular-font-weight: 400;
+    --bold-font-weight: 700;
 }
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--color-bg);
-
-    font-family: 'Outfit', sans-serif;
-    font-size: var(--font-size);
-    font-weight: 400;
-    
+html {
+    font-size: var(--base-font-size);
 }
 
-.main {
+body {
+    margin: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    height: 100vh;
+
+    min-height: 100vh;
+
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    font-weight: var(--regular-font-weight);
+    color: var(--color-text-paragraph);
+
+    background-color: var(--color-bg);
 }
 
 .qr-code {
     max-width: 320px;
-    background-color: var(--color-light);
-    border-radius: 20px;
+    background-color: var(--color-qr-code-bg);
+    border-radius: 1rem;
+
+    text-align: center;
 }
 
 .qr-code__wrapper {
-    padding: 16px;
+    padding: 1.067rem 1.067rem 1.6rem;
+}
+
+.qr-code__heading {
+    color: var(--color-text-heading);
+    font-size: 1.467rem;
+}
+
+.qr-code__desc {
+    letter-spacing: 0.013rem;
+}
+
+.qr-code__content {
+    padding: 0 1.067rem;
 }
 
 .qr-code__image {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 0.667rem;
 }
 
-.qr-code__content {
-    text-align: center;
-    max-width: 100%;
-    padding: 20px 15px;
-}
-
-.qr-code__title {
-    margin: 0;
-    font-weight: 600;
-    color: var(--color-title);
-    font-size: 1.4rem;
-}
-
-.qr-code__desc {
-    margin-bottom: 0;
-    color: var(--color-text);
-    font-size: 1rem;
-}
-
-
-@media screen and (max-width: 375px) {
-    .container {
-        padding: 0 20px;
+@media (max-width: 375px) {
+    body {
+        padding: 0 1.8rem;
     }
 }
