@@ -1,0 +1,22 @@
+.header {
+    padding-top: 57px;
+    position: relative;
+
+    background: url(../assets/images/header-curve.svg) no-repeat bottom / cover;
+
+    &__wrapper {
+        background-image: url(../assets/images/bg-pattern-1.svg), url(../assets/images/bg-pattern-2.svg);
+        background-repeat: no-repeat;
+        background-position: top 116px left 0, top 314px right 0;
+
+        @include media-tablet {
+            background-image: none;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,38 @@
+.button {
+    @include font(18px, $font-weight-bold, 32px);
+    @extend %font-primary;
+    letter-spacing: -0.18px;
+
+    @extend %transition;
+
+    cursor: pointer;
+    border: none;
+
+    padding: 13px 24px 16px;
+    color: $color-secondary-lighter;
+    background: transparent;
+    outline: none;
+
+    &_primary {
+        border: 2px solid $color-primary-accent;
+        color: $color-primary;
+        background-color: $color-primary-accent;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-primary-accent;
+        }
+    }
+    &_secondary {
+        padding: 13px 0 16px;
+
+        text-decoration: underline;
+        text-decoration-color: $color-primary-accent;
+        text-underline-offset: 11.2px;
+        text-decoration-thickness: 3px;
+
+        &:hover {
+            color: $color-primary-accent;
+        }
+    }
+}

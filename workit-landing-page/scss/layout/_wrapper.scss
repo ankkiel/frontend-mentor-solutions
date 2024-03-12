@@ -1,0 +1,11 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 0 165px;
+
+    width: 100%;
+    max-width: $content-width-desktop;
+
+    @include media-tablet {
+        padding: 0 39px;
+    }
+}
