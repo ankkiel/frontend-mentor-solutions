@@ -1,0 +1,96 @@
+.cta {
+    padding-top: 110px;
+    padding-bottom: 210px;
+    position: relative;
+
+    &__content {
+        position: relative;
+        left: -80px;
+        top: 170px;
+
+        max-width: 730px;
+        padding: 64px;
+
+        background-color: $color-primary;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 40px;
+            width: 202px;
+            height: 197px;
+            background-image: url(../assets/images/bg-pattern-3.svg);
+            background-repeat: no-repeat;
+
+            @include media-laptop {
+                right: -53px;
+            }
+
+            @include media-tablet {
+                display: none;
+            }
+        }
+        
+        @include media-laptop {
+            max-width: 400px;
+            top: 262px;
+        }
+
+        @include media-tablet {
+            max-width: 514px;
+            padding: 48px 56px 56px;
+            left: 0;
+            top: -50px;   
+        }
+        
+        @include media-mobile {
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        margin-top: 0;
+        color: $color-secondary-lighter;
+        @extend %heading;
+        @extend %heading-M;
+    }
+
+    &__image-fonder {
+        max-width: 477px;
+
+        @include media-tablet {
+            max-width: 281px;
+        }
+
+        @include media-laptop {
+            max-width: 300px;
+        }
+    }
+
+    &__text {
+        color: $color-secondary-lighter;
+    }
+
+    &__button {
+        margin-top: 32px;
+    }
+
+    &__wrapper {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-tablet {
+            flex-direction: column;
+        }
+    }
+
+    @include media-laptop {
+        padding-top: 0;
+    }
+
+    @include media-tablet {
+        padding-bottom: 0;
+    }
+}

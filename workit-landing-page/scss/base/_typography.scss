@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+body {
+    @extend %font-primary;
+    @include font(18px, $font-weight-regular, 32px);
+    color: $color-primary;
+
+    @include media-tablet {
+        @include font(16px, $font-weight-regular, 28px);
+    }
+}

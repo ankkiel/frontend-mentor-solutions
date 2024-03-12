@@ -1,0 +1,16 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    &__item {
+        cursor: pointer;
+        color: $color-secondary-dark;
+        @extend %transition;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+  }
+  
