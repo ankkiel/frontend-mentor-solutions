@@ -22,4 +22,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 13 | [Profile card component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/profile-card-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/profile-card-component/) |
 | 14 | [Social proof section](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/social-proof-section) | HTML, SCSS, Grid, Flexbox, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/social-proof-section/) |
 | 15 | [Article preview component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/article-preview-component) | HTML, SCSS, Grid, BEM, JS  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/article-preview-component/) |
+| 16 | [Workit landing page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/workit-landing-page) | HTML, SCSS, Flexbox, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/workit-landing-page/) |
 </details>
