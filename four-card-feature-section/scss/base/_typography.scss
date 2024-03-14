@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    @extend %font-primary;
+    font-weight: $font-weight-regular;
+    line-height: 1.667rem;
+    color: $color-secondary-dark;
+    
+    background-color: $color-secondary-lighter;
+}
+
+html {
+    font-size: $base-font-size;
+}

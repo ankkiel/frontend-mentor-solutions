@@ -1,0 +1,102 @@
+.features {
+    display: grid;
+    place-content: center;
+
+    min-height: 100vh;
+    
+    &__wrapper {
+         padding: 0 2.6rem;
+
+         @include media-tablet {
+            padding: 0 1.4rem;
+        }
+    }
+   
+    &__content-text {
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        margin: 0;
+
+        @include font(2.4rem, $font-weight-extra-light, 3.333rem);
+        letter-spacing: 0.017rem;
+        color: $color-secondary-darker;
+
+        @include media-tablet {
+            @include font(1.6rem);
+            letter-spacing: 0.011rem;
+        }
+    }
+
+    &__desc {
+        letter-spacing: 0.007rem;
+        line-height: 1.867rem;
+    }
+   
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__text-accent {
+        display: block;
+        font-weight: $font-weight-semi-bold;
+    }
+
+    &__list {
+        margin-top: 4rem;
+        padding: 0;
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        
+        grid-gap: 2rem;
+        grid-template-areas: 
+            'card-1 card-2 card-4'
+            'card-1 card-3 card-4';
+        align-content: stretch;
+            
+        @include media-laptop {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                'card-1 card-2'
+                'card-3 card-4'; 
+        }
+
+        @include media-tablet {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'card-1'
+            'card-2'
+            'card-3'
+            'card-4';
+            justify-items: center;
+        }
+    }
+
+    &__item {
+        display: grid;
+        max-width: 23.333rem;
+        align-items: stretch;
+
+        &:nth-child(1), &:nth-child(4) {
+            grid-area: start;
+            align-self: center;
+
+            @include media-tablet {
+                align-self: stretch;
+            }
+        }
+    }
+
+    @for $i from 1 through 4 {
+        &__item:nth-child(#{$i}) {
+            grid-area: card-#{$i};
+        }
+    }
+  }

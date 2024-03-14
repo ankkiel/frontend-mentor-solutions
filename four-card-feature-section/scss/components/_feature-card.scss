@@ -1,0 +1,47 @@
+.feature-card {
+    background-color: $color-secondary-light;
+    border-radius: 0.5rem;
+    border-top: 0.267rem solid;
+    padding: 2.133rem;
+    text-align: left;
+
+    box-shadow: 0 1rem 2rem 0.5rem #dedede;
+
+    &_supervisor {
+        border-color: $color-card-1;
+    }
+
+    &_team-builder {
+        border-color: $color-card-2;
+    }
+
+    &_karma {
+        border-color: $color-card-3;
+    }
+
+    &_calculator {
+        border-color: $color-card-4;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 0.4rem;
+        color: $color-secondary-darker;
+        font-size: 1.333rem;
+    }
+
+    &__desc {
+        margin: 0;
+        font-size: 0.867rem;
+        margin-bottom: 2.467rem;
+    }
+
+    &__icon {
+        justify-self: end;
+    }
+    
+    &__wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+  }
