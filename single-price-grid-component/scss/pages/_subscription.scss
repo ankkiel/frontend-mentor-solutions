@@ -1,0 +1,36 @@
+.subscription {
+    grid-area: subscription;
+    background-color: $color-primary;
+
+    &__desc {
+        margin: 0;
+        line-height: 1.625rem;
+        letter-spacing: -0.013rem;
+        margin-bottom: 1.625rem;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 1.125rem;
+        @include font(1.125rem, $font-weight-bold);
+        letter-spacing: -0.014rem;
+    }
+
+    &__price {
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 0.688rem;
+
+        @include font(2rem, $font-weight-bold);
+        letter-spacing: -0.025rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__tarif {
+        @include font(1rem, $font-weight-regular, 1.625rem);
+        letter-spacing: -0.013rem;
+        opacity: 0.5;
+    }
+  }

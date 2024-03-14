@@ -1,0 +1,25 @@
+.advertisement {
+    max-width: 39.688rem;
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    box-shadow: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "community community"
+            "subscription why-us";
+
+        @include media-tablet {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "community"
+                "subscription"
+                "why-us";
+        }
+    }
+}
