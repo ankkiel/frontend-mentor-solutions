@@ -1,0 +1,24 @@
+.button {
+    width: 100%;
+    @include font(1rem, $font-weight-bold);
+    font-family: $base-font-primary;
+    
+    letter-spacing: -0.013rem;
+
+    cursor: pointer;
+    border: none;
+
+    padding: 15px 0 14px 0;
+    color: $color-secondary-light;
+
+    background-color: $color-primary-accent;
+    border-radius: 0.313rem;
+
+    outline: none;
+
+    transition: opacity .5s ease-in-out;
+
+    &:hover {
+        opacity: .8;
+    }
+}

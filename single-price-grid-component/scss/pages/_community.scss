@@ -1,0 +1,45 @@
+.community {
+    grid-area: community;
+    background-color: $color-secondary-light;
+
+    &__desc {
+        margin: 0;
+        line-height: 1.625rem;
+        letter-spacing: -0.011rem;
+        color: $color-secondary-darker;
+
+        @include media-tablet {
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+            letter-spacing: -0.011rem;
+        }
+    }
+
+    &__guarantee {
+        margin: 0;
+        margin-bottom: 0.688rem;
+        @include font(1.125rem, $font-weight-bold);
+        letter-spacing: -0.014rem;
+        color: $color-primary-accent;
+
+        @include media-tablet {
+            font-size: 0.938rem;
+            line-height: 1.25rem;
+            letter-spacing: -0.012rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 1.5rem;
+        @include font(1.5rem, $font-weight-bold);
+        letter-spacing: -0.019rem;
+        color: $color-primary;
+
+        @include media-tablet {
+            font-size: 1.25rem;
+            letter-spacing: -0.016rem;
+        }
+    }
+}

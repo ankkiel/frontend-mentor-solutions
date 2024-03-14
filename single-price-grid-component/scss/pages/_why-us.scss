@@ -1,0 +1,26 @@
+.why-us {
+    grid-area: why-us;
+    background-color: $color-primary;
+    opacity: 0.8;
+
+    &__item {
+        opacity: 0.75;
+        @include font(0.875rem, $font-weight-regular, 1.25rem);
+        letter-spacing: -0.011rem;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__heading {
+        margin: 0;
+        @include font(1.125rem, $font-weight-bold);
+        letter-spacing: -0.014rem;
+    }
+
+    &__wrapper {
+        padding-bottom: 1.5rem;
+    }
+}

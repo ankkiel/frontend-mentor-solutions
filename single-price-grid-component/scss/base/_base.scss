@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background-color: $color-bg;
+    
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+
+    @include media-tablet {
+        padding: 4.5rem 2rem 3.875rem;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    padding: 2.5rem;
+
+    @include media-tablet {
+        padding: 1.5rem;
+        padding-top: 1.75rem;
+    }
+}
