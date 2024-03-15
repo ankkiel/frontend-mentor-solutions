@@ -1,0 +1,41 @@
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    justify-content: end;
+
+    gap: 16px;
+   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__link {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+        border: 1.18px solid $secondary-color-light;
+
+        background: transparent;
+        color: $secondary-color-light;
+        text-decoration: none;
+        display: grid;
+        place-items: center;
+
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            border-color: $primary-accent-color;
+            color: $primary-accent-color;
+        }
+
+        @include media-tablet {
+            width: 27.5px;
+            height: 28px;
+        }
+    }
+    @include media-tablet {
+        justify-content: center;
+        gap: 10.49px;
+    }
+}

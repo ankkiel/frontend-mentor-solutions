@@ -1,0 +1,10 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 55px 76px 40px 72px;
+
+    max-width: $content-width-desktop;
+
+    @include media-tablet {
+        padding: 40px;
+    }
+}
