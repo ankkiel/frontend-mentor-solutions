@@ -1,0 +1,13 @@
+.main-footer {
+    &__wrapper {
+        text-align: right;
+        padding-top: 0;
+        padding-bottom: 39px;
+        padding-right: 63px;
+
+        @include media-tablet {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.button {
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+    background-color: $secondary-color-light;
+
+    font-family: $primary-font-family;
+    @include font-style(18px, $regular-font-weight, 27px);
+    color: $primary-color;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 63px 16px 64px;
+
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-color: $secondary-accent-color;
+        color: $secondary-color-light;
+    }
+
+    @include media-tablet {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

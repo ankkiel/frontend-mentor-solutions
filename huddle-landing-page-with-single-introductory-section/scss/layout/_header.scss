@@ -1,0 +1,9 @@
+.main-header {
+    &__logo-img {
+        width: 200px;
+    
+        @include media-tablet {
+            width: 120px;
+        }
+    }
+}
