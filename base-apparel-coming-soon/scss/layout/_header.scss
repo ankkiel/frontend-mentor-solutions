@@ -1,0 +1,22 @@
+.header {
+    grid-area: header;
+
+    &__logo {
+        display: inline-block;
+
+        padding-top: 4rem;
+        margin-bottom: 7.5rem;
+
+        @include media-laptop {
+            padding-top: 1.938rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo-img {
+        @include media-laptop {
+            width: 6.25rem;
+            height: 1.306rem;
+        }
+    }
+}

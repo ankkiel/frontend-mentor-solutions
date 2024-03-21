@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+$font-primary: 'Josefin Sans', sans-serif;
+$light-font-weight: 300;
+$semi-bold-font-weight: 600;
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $color-primary;
+    line-height: 1.75rem;
+}

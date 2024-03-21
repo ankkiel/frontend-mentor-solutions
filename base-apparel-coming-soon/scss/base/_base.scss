@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    grid-area: main;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 55.4% 1fr;
+    column-gap: 2rem;
+    grid-template-areas: 
+        'header side-image'
+        'main side-image';
+    background: url(../images/bg-pattern-desktop.svg) top left no-repeat, $gradient-1;
+    background-size: 100% 100%;
+
+    @include media-laptop {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10.5% 50% 1fr;
+        grid-template-areas: 
+            'header'
+            'side-image'
+            'main'; 
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}

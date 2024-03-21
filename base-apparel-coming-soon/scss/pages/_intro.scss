@@ -1,0 +1,115 @@
+.intro {
+    &__wrapper {
+        padding-bottom: 8rem;
+
+        @include media-laptop {
+            text-align: center;
+            padding-bottom: 5.75rem;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+
+        @include font(4rem, 4.438rem, $semi-bold-font-weight);
+        letter-spacing: 1.083rem;
+        color: $color-neutral;
+        text-transform: uppercase;
+
+        @include media-laptop {
+            margin-top: 4rem;
+            @include font(2.5rem, 2.625rem, $semi-bold-font-weight);
+            letter-spacing: 0.677rem;
+        }
+    }
+
+    &__heading-accent {
+        font-weight: $light-font-weight;
+        line-height: 4rem;
+        color: $color-primary;
+
+        @include media-laptop {
+            @include font(2.5rem, 2.625rem, $semi-bold-font-weight);
+        }
+    }
+
+    &__desc {
+        @include media-laptop {
+            @include font(0.875rem, 1.375rem);
+        }
+    }
+
+    &__form-email {
+        display: grid;
+        position: relative;
+        margin-top: 2.5rem;
+    }
+
+    &__form-input {
+        width: 100%;
+        padding: 0.938rem 0 0.813rem 2rem;
+        height: 3.5rem;
+        color: $color-neutral;
+        border-radius: 2rem;
+        border: 1px solid $color-primary;
+        outline: none;
+
+        &--error {
+            border-color: $color-primary-dark;
+        }
+    }
+
+    &__form-input::placeholder {
+        color: $color-primary;
+        line-height: 6rem;
+        opacity: 0.5;
+        letter-spacing: 0.1rem;
+    }
+
+    &__form-button {
+        justify-self: end;
+        position: absolute;
+        width: 6.25rem;
+        height: 3.5rem;
+        border: none;
+        background: $gradient-2;
+        outline: none;
+        box-shadow: 0 0.938rem 1.25rem 0 rgba(198, 110, 110, 0.25);
+        cursor: pointer;
+        border-radius: 2rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__form-error-msg {
+        font-size: 0.813rem;
+        margin-left: 2rem;
+        margin-top: 0.2rem;
+        color: $color-primary-dark;
+        opacity: 0;
+        @include transition;
+        text-align: left;
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__form-error-icon {
+        font-size: 0;
+        position: absolute;
+        top: 1rem;
+        right: 116px;
+        width: 24px;
+        height: 24px;
+        background: url(../images/icon-error.svg);
+        opacity: 0;
+        @include transition;
+
+        &--active {
+            opacity: 1;
+        }
+    }
+}

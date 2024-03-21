@@ -1,0 +1,15 @@
+@mixin media-laptop {
+    @media (max-width: $width-laptop) {
+        @content;
+    }
+}
+
+@mixin font($font-size, $line-height, $font-weight: 400) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+
+@mixin transition {
+    transition: all 0.4s ease-in-out;
+}

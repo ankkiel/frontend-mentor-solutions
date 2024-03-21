@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  grid-area: main;
+}
+
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 55.4% 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  grid-template-areas: "header side-image" "main side-image";
+  background: url(../images/bg-pattern-desktop.svg) top left no-repeat, linear-gradient(135deg, #ffffff, #fff5f5);
+  background-size: 100% 100%;
+}
+@media (max-width: 1024px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10.5% 50% 1fr;
+    grid-template-areas: "header" "side-image" "main";
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #ce9898;
+  line-height: 1.75rem;
+}
+
+.wrapper {
+  max-width: 38rem;
+  padding-left: 10.3rem;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  grid-area: header;
+}
+.header__logo {
+  display: inline-block;
+  padding-top: 4rem;
+  margin-bottom: 7.5rem;
+}
+@media (max-width: 1024px) {
+  .header__logo {
+    padding-top: 1.938rem;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .header__logo-img {
+    width: 6.25rem;
+    height: 1.306rem;
+  }
+}
+
+.side-image {
+  grid-area: side-image;
+  background: url(../images/hero-desktop.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__wrapper {
+  padding-bottom: 8rem;
+}
+@media (max-width: 1024px) {
+  .intro__wrapper {
+    text-align: center;
+    padding-bottom: 5.75rem;
+  }
+}
+.intro__heading {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 4.438rem;
+  font-weight: 600;
+  letter-spacing: 1.083rem;
+  color: #423a3a;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .intro__heading {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    font-weight: 600;
+    letter-spacing: 0.677rem;
+  }
+}
+.intro__heading-accent {
+  font-weight: 300;
+  line-height: 4rem;
+  color: #ce9898;
+}
+@media (max-width: 1024px) {
+  .intro__heading-accent {
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 1024px) {
+  .intro__desc {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.intro__form-email {
+  display: grid;
+  position: relative;
+  margin-top: 2.5rem;
+}
+.intro__form-input {
+  width: 100%;
+  padding: 0.938rem 0 0.813rem 2rem;
+  height: 3.5rem;
+  color: #423a3a;
+  border-radius: 2rem;
+  border: 1px solid #ce9898;
+  outline: none;
+}
+.intro__form-input--error {
+  border-color: #f96262;
+}
+.intro__form-input::-moz-placeholder {
+  color: #ce9898;
+  line-height: 6rem;
+  opacity: 0.5;
+  letter-spacing: 0.1rem;
+}
+.intro__form-input::placeholder {
+  color: #ce9898;
+  line-height: 6rem;
+  opacity: 0.5;
+  letter-spacing: 0.1rem;
+}
+.intro__form-button {
+  justify-self: end;
+  position: absolute;
+  width: 6.25rem;
+  height: 3.5rem;
+  border: none;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  outline: none;
+  box-shadow: 0 0.938rem 1.25rem 0 rgba(198, 110, 110, 0.25);
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.intro__form-button:hover {
+  opacity: 0.8;
+}
+.intro__form-error-msg {
+  font-size: 0.813rem;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+  color: #f96262;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  text-align: left;
+}
+.intro__form-error-msg--active {
+  opacity: 1;
+}
+.intro__form-error-icon {
+  font-size: 0;
+  position: absolute;
+  top: 1rem;
+  right: 116px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icon-error.svg);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.intro__form-error-icon--active {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
