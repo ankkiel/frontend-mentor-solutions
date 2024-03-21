@@ -26,4 +26,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 17 | [Four card feature section](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/four-card-feature-section) | HTML, SCSS, Grid, BEM, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/four-card-feature-section/) |
 | 18 | [Single price grid component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/single-price-grid-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/single-price-grid-component/) |
 | 19 | [Huddle landing page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/huddle-landing-page-with-single-introductory-section) | HTML, SCSS, Grid, BEM, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/huddle-landing-page-with-single-introductory-section/) |
+| 20 | [Base apparel page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/base-apparel-coming-soon) | HTML, SCSS, Grid, BEM, JS, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/base-apparel-coming-soon/) |
 </details>
