@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="visually-hidden">Base Apparel Coming Soon</h1>
+    <div class="wrapper">
+      <a class="header__logo">
+        <img class="header__logo-img" src="./images/logo.svg" alt="Base Apparel">
+      </a>
+    </div>
+  </header>
+  <section class="side-image" role="complementary">
+    <h2 class="visually-hidden">Image girl</h2>
+  </section>
+  <main class="main">
+    <section class="intro">
+      <div class="intro__wrapper wrapper">
+        <h2 class="intro__heading"><span class="intro__heading-accent">We're</span> coming soon</h2>
+        <p class="intro__desc">Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <form action="#" class="intro__form-email">
+            <input class="intro__form-input" type="email" placeholder="Email Address">
+            <span class="intro__form-error-msg">Please provide a valid email</span>
+            <span class="intro__form-error-icon">Error icon</span>
+            <button type="submit" class="intro__form-button" aria-label="Button submit">
+              <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L9.83566 9.83566L1 18.6713" stroke="white" stroke-width="2" />
+              </svg>
+            </button>
+          </form>  
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="validationForm.js"></script>
+  <script src="animation.js"></script>
+</body>
+</html>
