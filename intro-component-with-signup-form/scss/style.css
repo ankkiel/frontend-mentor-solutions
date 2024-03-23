@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10.313rem;
+  background: #ff7979 url(../images/bg-intro-desktop.png) no-repeat center/cover;
+}
+@media (max-width: 1024px) {
+  body {
+    padding: 5.313rem;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    padding: 5.5rem 1.5rem 4.25rem;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  align-items: center;
+  -moz-column-gap: 1.89rem;
+       column-gap: 1.89rem;
+  min-height: 100vh;
+}
+@media (max-width: 1024px) {
+  .intro {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    place-content: center;
+    align-items: center;
+    row-gap: 1.875rem;
+    text-align: center;
+  }
+}
+.intro__text {
+  max-width: 32.813rem;
+}
+@media (max-width: 1024px) {
+  .intro__text {
+    max-width: 100%;
+  }
+}
+.intro__heading {
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 3.125rem;
+  line-height: 3.438rem;
+  font-weight: 700;
+  letter-spacing: -0.033rem;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .intro__heading {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.018rem;
+    font-style: normal;
+  }
+}
+.intro__desc {
+  margin: 0;
+  line-height: 1.625rem;
+}
+.intro__form-container {
+  max-width: 33.75rem;
+}
+@media (max-width: 1024px) {
+  .intro__form-container {
+    max-width: 100%;
+  }
+}
+.intro__form-appeal {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.063rem 0;
+  background-color: #5e54a4;
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.938rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  letter-spacing: 0.017rem;
+  font-style: normal;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 425px) {
+  .intro__form-appeal {
+    padding: 1.063rem 4.125rem;
+  }
+}
+.intro__form-appeal-accent {
+  font-weight: 700;
+}
+
+.signup-form {
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+}
+.signup-form__agreement {
+  margin: 0;
+  text-align: center;
+  color: #bab7d4;
+  font-size: 0.688rem;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-style: normal;
+}
+@media (max-width: 1024px) {
+  .signup-form__agreement {
+    line-height: 1.313rem;
+  }
+}
+.signup-form__agreement-accent {
+  color: #ff7979;
+  font-weight: 700;
+}
+.signup-form__button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.938rem 0;
+  background-color: #38cc8b;
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+  border-radius: 0.313rem;
+  font-size: 0.938rem;
+  line-height: 1.625rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-style: normal;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+.signup-form__button:hover {
+  opacity: 0.75;
+}
+.signup-form__container {
+  display: grid;
+  gap: 1.25rem;
+  padding: 2.5rem;
+}
+@media (max-width: 768px) {
+  .signup-form__container {
+    padding: 1.5rem;
+  }
+}
+.signup-form__field {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 0.313rem;
+  padding: 0.88rem 2rem;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  font-weight: 600;
+  letter-spacing: 0.016rem;
+  font-style: normal;
+  transition: all 0.4s ease-in-out;
+}
+.signup-form__field::-moz-placeholder {
+  opacity: 0.75;
+  color: #3d3b48;
+}
+.signup-form__field::placeholder {
+  opacity: 0.75;
+  color: #3d3b48;
+}
+.signup-form__field:focus {
+  outline: none;
+  caret-color: #5e54a4;
+  color: #3d3b48;
+}
+.signup-form__field_error {
+  background: url(../images/icon-error.svg) no-repeat calc(100% - 27px) center;
+  background-size: 24px;
+  border: 2px solid #ff7979;
+}
+.signup-form__error-msg {
+  display: none;
+  margin-top: 0.438rem;
+  text-align: right;
+  font-size: 0;
+  font-size: 0.688rem;
+  line-height: auto;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-style: italic;
+  color: #ff7979;
+}/*# sourceMappingURL=style.css.map */
