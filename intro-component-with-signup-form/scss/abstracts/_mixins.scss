@@ -1,0 +1,17 @@
+@mixin media-query($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin transition {
+    transition: all .4s ease-in-out;
+}
+
+@mixin font($font-size, $line-height, $font-weight: $font-weight-regular, $letter-spacing, $font-style: normal) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    font-style: $font-style;
+}
