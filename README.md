@@ -27,4 +27,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 18 | [Single price grid component](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/single-price-grid-component) | HTML, SCSS, Grid, BEM  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/single-price-grid-component/) |
 | 19 | [Huddle landing page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/huddle-landing-page-with-single-introductory-section) | HTML, SCSS, Grid, BEM, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/huddle-landing-page-with-single-introductory-section/) |
 | 20 | [Base apparel page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/base-apparel-coming-soon) | HTML, SCSS, Grid, BEM, JS, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/base-apparel-coming-soon/) |
+| 21 | [Intro component with signup form](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/intro-component-with-signup-form) | HTML, SCSS, Grid, BEM, JS, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/intro-component-with-signup-form/) |
 </details>
