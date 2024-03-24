@@ -1,0 +1,36 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    
+
+    &__item {
+        width: 1.4rem;
+        height: 1.4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 0.05rem solid $color-secondary-light;
+        border-radius: 50%;
+        @include transition;
+
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+
+            .social-links__link {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__link {
+        color: $color-primary;
+        font-size: 0.8rem;
+
+        @include transition;
+    }
+}
