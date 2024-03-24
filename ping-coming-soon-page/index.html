@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="" class="header__logo">
+      <img class="header__logo-img" src="./images/logo.svg" alt="Ping">
+    </a>
+  </header>
+  <main>
+    <section class="coming-soon">
+      <h1 class="coming-soon__heading">We are launching <span class="coming-soon__heading-accent">soon!</span></h1>
+      <p class="coming-soon__subheading">Subscribe and get notified</p>
+      <form class="form-notify coming-soon__form-notify" action="#" method="post">
+        <div class="form-notify__field">
+          <input class="form-notify__input" type="email" name="email" id="email" placeholder="Your email address...">
+          <button class="form-notify__button" type="submit">Notify Me</button>
+          <span class="form-notify__error-state">Please provide a valid email address</span>
+        </div>
+      </form>
+      <img class="coming-soon__image" src="./images/illustration-dashboard.png" alt="Illustration dashboard">
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="social-links">
+      <li class="social-links__item">
+        <a href="#" class="social-links__link" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/559801a7d2.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

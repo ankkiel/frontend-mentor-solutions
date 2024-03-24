@@ -1,0 +1,33 @@
+.coming-soon {
+    max-width: 32rem;
+    
+    padding-top: 2.4rem;
+    padding-bottom: 3.4rem;
+    
+    &__heading {
+        margin: 0;
+        margin-bottom: 1rem;
+
+        @include font(2.4rem, $font-weight-light);
+        
+        letter-spacing: 0.01rem;
+        color: $color-neutral;
+        text-align: center;
+    }
+
+    &__heading-accent {
+        font-weight: $font-weight-bold;
+        color: $color-neutral-dark;
+    }
+
+    &__subheading {
+        margin: 0;
+        text-align: center;
+
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        margin-top: 3.3rem;
+    }
+  }

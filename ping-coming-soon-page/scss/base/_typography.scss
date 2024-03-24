@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+$base-font-size: 20px;
+$base-font-family: 'Libre Franklin', sans-serif;
+$font-weight-light: 300;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+html {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $font-weight-light;
+
+    @include media-query($breakpoint-mobile) {
+        font-size: 0.8rem;
+    }
+}

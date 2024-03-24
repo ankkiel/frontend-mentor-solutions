@@ -1,0 +1,83 @@
+.form-notify {
+    &__field {
+        display: flex;
+        align-items: center;
+
+        column-gap: 0.8rem;
+        row-gap: 0.4rem;
+        flex-wrap: wrap;
+    }
+    &__input {
+        flex-grow: 1;
+        padding: 0.8rem 1.6rem;
+
+        border: 1px solid $color-secondary-light;
+        border-radius: 2rem;
+        outline: none;
+        font-size: 0.8rem;
+
+        @include transition;
+
+        &::placeholder {
+            color: $color-secondary-light;
+        }
+
+        &_invalid {
+            border-color: $color-secondary-dark;
+        }
+    }
+
+    &__button {
+        width: 10rem;
+        height: 2.8rem;
+
+        cursor: pointer;
+        background-color: $color-primary;
+        border-radius: 2.5rem;
+        border: none;
+        text-align: center;
+
+        box-shadow: 0px 10px 15px -3px $color-secondary-light;
+
+        @include font(0.8rem, $font-weight-semibold);
+        color: #ffffff;
+
+        @include transition;
+
+        &:hover {
+           opacity: .75;
+        }
+
+        @include media-query($breakpoint-tablet) {
+            width: 100%;
+        }
+
+        @include media-query($breakpoint-tablet) {
+            order: 1;
+        }
+    }
+
+    &__error-state {
+        width: 100%;
+        margin-left: 1.6rem;
+
+        color: $color-secondary-dark;
+
+        @include font(0.6rem, 400);
+        font-style: italic;
+
+        @include transition;
+        opacity: 0;
+
+        &_active {
+            opacity: 1;
+        }
+
+        @include media-query($breakpoint-tablet) {
+            order: 0;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}
+  
