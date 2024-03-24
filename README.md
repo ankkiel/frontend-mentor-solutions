@@ -28,4 +28,5 @@ This is where I store the solutions for Frontend Mentor Challenges
 | 19 | [Huddle landing page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/huddle-landing-page-with-single-introductory-section) | HTML, SCSS, Grid, BEM, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/huddle-landing-page-with-single-introductory-section/) |
 | 20 | [Base apparel page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/base-apparel-coming-soon) | HTML, SCSS, Grid, BEM, JS, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/base-apparel-coming-soon/) |
 | 21 | [Intro component with signup form](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/intro-component-with-signup-form) | HTML, SCSS, Grid, BEM, JS, GSAP  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/intro-component-with-signup-form/) |
+| 22 | [Ping coming soon page](https://github.com/ankkiel/frontend-mentor-solutions/tree/main/ping-coming-soon-page) | HTML, SCSS, Flexbox, BEM, JS  | [Link](https://ankkiel.github.io/frontend-mentor-solutions/ping-coming-soon-page/) |
 </details>
