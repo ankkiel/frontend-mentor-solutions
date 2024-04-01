@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+$font-family: 'IBM Plex Sans', sans-serif;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+%paragraph-1 {
+    @include font(1.25rem, $font-weight-400, 2.125rem);
+
+    @include media-query($breakpoint-desktop) {
+        @include font(1.125rem, $font-weight-400, 1.75rem);
+    }
+
+    @include media-query($breakpoint-mobile) {
+        @include font(1rem, $font-weight-400, 1.625rem);
+    }
+}
+
+%paragraph-2 {
+    @include font(1rem, $font-weight-400, 1.625rem);
+}
+
+h1 {
+    @include font(5.5rem, $font-weight-700, 1);
+    letter-spacing: -0.063rem;
+
+    @include media-query($breakpoint-desktop) {
+        @include font(4rem, $font-weight-700, 1);
+        letter-spacing: -0.0456rem;
+    }
+
+    @include media-query($breakpoint-mobile) {
+        @include font(2.5rem, $font-weight-700, 3rem);
+    }
+}
+
+h2 {
+    @include font(2.5rem, $font-weight-700, 3.25rem);
+
+    @include media-query($breakpoint-desktop) {
+        @include font(2rem, $font-weight-700, 2.5rem);
+    }
+}
+
+body {
+    font-family: $font-family;
+    @extend %paragraph-1;
+}

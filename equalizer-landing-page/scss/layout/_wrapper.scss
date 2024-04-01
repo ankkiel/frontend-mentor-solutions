@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 165px;
+
+    @include media-query($breakpoint-desktop) {
+        padding-left: 33px;
+        padding-right: 39px;
+    }
+
+    @include media-query($breakpoint-mobile) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
