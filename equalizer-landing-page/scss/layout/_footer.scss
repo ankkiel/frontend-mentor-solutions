@@ -1,0 +1,38 @@
+.footer {
+    &__logo {
+        align-self: baseline;
+
+        @include media-query($breakpoint-desktop) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 62px;
+        padding-bottom: 62px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__copyright {
+        margin: 0;
+        max-width: 455px;
+
+        @include media-query($breakpoint-desktop) {
+            max-width: 530px;
+        }
+
+        @include media-query($breakpoint-mobile) {
+            margin-bottom: 44px;
+        }
+    }
+
+    &__email {
+        color: $color-secondary-dark;
+        font-weight: $font-weight-700;
+    }
+}

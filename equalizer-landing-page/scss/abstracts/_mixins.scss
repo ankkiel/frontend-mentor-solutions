@@ -1,0 +1,15 @@
+@mixin font($font-size, $font-weight, $line-height: normal) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+@mixin media-query($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin transition() {
+    transition: all .4s ease;
+}

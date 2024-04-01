@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(../assets/bg-main-desktop.png) no-repeat top center/cover, url(../assets/bg-pattern-1.svg) no-repeat top right;
+
+    @include media-query($breakpoint-desktop) {
+        background: url(../assets/bg-main-tablet.png) no-repeat top center/cover, url(../assets/bg-pattern-1.svg) no-repeat top right / 30%;
+    }
+
+    @include media-query($breakpoint-mobile) {
+        background: url(../assets/bg-main-mobile.png) no-repeat top / cover;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}

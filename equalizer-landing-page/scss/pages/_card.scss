@@ -1,0 +1,41 @@
+.card {
+  background-color: $color-primary-accent;
+  border-radius: 12px;
+  color: $color-secondary-light;
+
+  &__button {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+  }
+
+  &__cost {
+    @include font(4rem, $font-weight-700, 3.25rem);
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 39px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__price-tarif {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 46px;
+  }
+
+  &__wrapper {
+    padding: 58px 59px 48px 54px;
+    
+    @include media-query($breakpoint-desktop) {
+      padding: 48px;
+    }
+  }
+}
