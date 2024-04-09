@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+$font-size: 16px;
+$font-primary: 'Work Sans', sans-serif;
+
+$color-white: #ffffff;
+$color-light-pink: #f9f0ff;
+$color-grayish-purple: #8c6991;
+$color-dark-purple: #2f1533;
+$color-hover-btn: #a820e4;
+
+$tablet-width: 600px;
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+      @content;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: $font-size;
+  font-weight: 400;
+  color: $color-dark-purple;
+  
+  background: url('/public/images/background-pattern-desktop.svg') no-repeat top left fixed;
+  background-size: 100% auto;
+
+  background-color: $color-light-pink;
+  @include media-tablet() {
+    background-image: url('/public/images/background-pattern-mobile.svg');
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  @include media-tablet() {
+    padding: 0 25px;
+  }
+}
+
+.faqs {
+  max-width: 600px;
+  border-radius: 18px;
+  background-color: $color-white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  @include media-tablet() {
+    min-width: 250px;
+  }
+}
+
+.faqs__wrapper {
+  padding: 40px 40px 15px;
+  @include media-tablet() {
+    padding: 25px;
+  }
+}
+
+.faqs__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 3.5em;
+
+  &::before {
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+
+    content: '';
+    background-image: url('/public/images/icon-star.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-right: 25px;
+    
+    @include media-tablet() {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  @include media-tablet() {
+    font-size: 1.9em;
+    margin-bottom: 0px;
+  }
+}
+
+.faqs__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-light-pink;
+  }
+}
+
+.faqs__btn {
+  position: relative;
+  margin: 0;
+  padding: 29px;
+  padding-left: 0;
+
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 1.125em;
+
+  transition: 0.4s;
+
+  font-family: inherit;
+
+  &::after {
+    content: url('/public/images/icon-plus.svg');
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+
+  &.active:after {
+    content: url('/public/images/icon-minus.svg');
+  }
+
+  &:hover {
+    color: $color-hover-btn
+  }
+
+  @include media-tablet() {
+    font-size: 1em;
+  }
+}
+
+.faqs__description {
+  color: $color-grayish-purple;
+  line-height: 1.5;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  
+  @include media-tablet() {
+    font-size: 0.9em;
+  }
+}
